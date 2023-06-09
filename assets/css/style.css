@@ -1,11 +1,27 @@
 
+*{
+    padding: 0;
+    margin: 0;
+    /* border: border-box; */
+}
 body{
     background-color: rgb(214, 213, 216);
+    height: 100vh;
+}
+.quiz-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin: 10px;
+    padding: 10px;  
+    
 }
 
 .card {
     border: 1px solid #2c2828;
     border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
   }
+
