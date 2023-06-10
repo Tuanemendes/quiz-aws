@@ -1,27 +1,88 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
     /* border: border-box; */
 }
-body{
-    background-color: rgb(214, 213, 216);
-    height: 100vh;
+
+:root {
+    --purpel: #250449;
+    --gray-ligth: #f1f1f1;
 }
-.quiz-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-    margin: 10px;
-    padding: 10px;  
+
+.header-container {
+    background-color: var(--purpel);
+    color: var(--gray-ligth);
+    padding: 10px;
     
+}
+
+.interrogation {
+    width: 110px;
+    height: 110px;
+    border: 3px solid var(--gray-ligth);
+    border-radius: 50%;
+    font-size: 34px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+    animation: go-back 4s ease-in-out infinite alternate;
+    margin: 10px;
+    text-align: center;
+}
+
+.interrogation::before,
+.interrogation::after {
+    content: '?';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: var(--gray-ligth);
+    top: calc(50% - 30px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.interrogation::before {
+    transform: rotate(-10deg);
+    transform-origin: 0 60%;
+    left: 8px;
+    top: 50px;
+}
+
+.interrogation::after {
+    transform: rotate(45deg);
+    transform-origin: 100% 50%;
+    right: 5px;
+    top: 60px;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(10px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+.quiz-container {
+    margin: 10px;
+    padding: 10px;
 }
 
 .card {
     border: 1px solid #2c2828;
     border-radius: 5px;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 20px;
-  }
 
+}
+
+.footer {
+    background-color: var(--purpel);
+    color: var(--gray-ligth);
+    padding: 20px;
+    text-align: center;
+}
