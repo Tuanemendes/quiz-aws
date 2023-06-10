@@ -1,0 +1,1 @@
+import quizData from './quizData.js';

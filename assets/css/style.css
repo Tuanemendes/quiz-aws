@@ -5,28 +5,29 @@
 }
 
 :root {
-    --purpel: #250449;
+    --purpel: #3b007a;
     --gray-ligth: #f1f1f1;
 }
+
 
 .header-container {
     background-color: var(--purpel);
     color: var(--gray-ligth);
-    padding: 10px;
-    
+    padding: 5px;
+
 }
 
 .interrogation {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     border: 3px solid var(--gray-ligth);
     border-radius: 50%;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.3s;
     animation: go-back 4s ease-in-out infinite alternate;
-    margin: 10px;
+    margin: 2px;
     text-align: center;
 }
 
@@ -65,8 +66,6 @@
     }
 }
 
-
-
 .quiz-container {
     margin: 10px;
     padding: 10px;
@@ -77,12 +76,31 @@
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
-
 }
 
 .footer {
     background-color: var(--purpel);
     color: var(--gray-ligth);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-footer_icon {
+    margin: 8px;
+    width: 24px;
+}
+
+@media (min-width: 995px) {
+
+    .quiz-container {
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
 }
