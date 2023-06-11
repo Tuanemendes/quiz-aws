@@ -5,7 +5,7 @@
 }
 
 :root {
-    --purpel: #3b007a;
+    --purpel: #4f0bbc;
     --gray-ligth: #f1f1f1;
 }
 
@@ -84,7 +84,7 @@
     padding: 10px;
     text-align: center;
     margin-top: 60px;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,9 +98,7 @@
 @media (min-width: 995px) {
 
     .quiz-container {
-        margin-top: 100px;
         margin-left: 100px;
         margin-right: 100px;
-
     }
 }
