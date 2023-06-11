@@ -138,6 +138,16 @@ const questions = [
             "AWS Amplify e AWS AppSync"],
         answer: 1
     },
+
+    {
+        question: "Qual é o escopo de uma VPC na rede da AWS?",
+
+        options: ["Um VPC pode abranger todas as zonas de disponibilidade globalmente.",
+            "Uma VPC deve abranger pelo menos duas sub-redes em cada região da AWS.",
+            "Uma VPC deve abranger pelo menos dois pontos de presença em cada região da AWS.",
+            "Uma VPC pode abranger todas as zonas de disponibilidade em uma região da AWS."],
+        answer: 3
+    },
 ]
 
 export default questions;

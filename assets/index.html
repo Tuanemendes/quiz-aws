@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -18,15 +18,18 @@
             <p>Quiz </p>
         </div>
     </header>
-    <main id="quiz-container" class="quiz-container ">
+    <main id="quiz-container" class="quiz-container content min-vh-100 ">
         <section class="card shadow p-3 bg-body-tertiary rounded">
             <div class="quiz-title">
                 <h2>AWS Certified Cloud Practitioner</h2>
                 <div>
                     <h3 id="question-count">Pergunta 1/65</h3>
-                    <span id="score" class="corretc-score">Score:0</span>
+                    <div id="timer" class="d-flex justify-content-between">
+                        <span id="score" class="corretc-score">Pontuação: 0</span>
+                        <span id="time">Tempo Total: 00:00</span>
+                        <button id="start-button" type="button" class="btn btn-outline-secondary mb-2">Iniciar</button>
+                    </div>
                 </div>
-
             </div>
             <div>
                 <div class="card">
@@ -36,31 +39,37 @@
                 </div>
                 <div class="options">
                     <ul id="options-list" class="list-group">
-                        <li class="list-group-item alert alert-success" role="alert">
-                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
-                                id="firstRadio" checked>
-                            <label class="form-check-label" for="firstRadio"></label>
+
+                        <li class="list-group-item mb-3">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="0"
+                                id="option-0">
+                            <label class="form-check-label" for="option-0"></label>
                         </li>
-                        <li class="list-group-item alert alert-danger" role="alert">
-                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
-                                id="firstRadio" checked>
-                            <label class="form-check-label" for="firstRadio"></label>
+
+                        <li class="list-group-item mb-3">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="1"
+                                id="option-1">
+                            <label class="form-check-label" for="option-1"></label>
                         </li>
-                        <li class="list-group-item ">
-                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
-                                id="firstRadio" checked>
-                            <label class="form-check-label" for="firstRadio"></label>
+
+                        <li class="list-group-item mb-3">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="2"
+                                id="option-2">
+                            <label class="form-check-label" for="option-2"></label>
                         </li>
-                        <li class="list-group-item  ">
-                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
-                                id="firstRadio" checked>
-                            <label class="form-check-label" for="firstRadio"></label>
+
+                        <li class="list-group-item mb-3">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="3"
+                                id="option-3">
+                            <label class="form-check-label" for="option-3"></label>
                         </li>
+
                     </ul>
                 </div>
-                <div class="m-2 ">
+                <div class="m-2 d-flex justify-content-around">
                     <button id="prev-button" type="button" class="btn btn-outline-secondary">Voltar</button>
                     <button id="next-button" type="button" class="btn btn-outline-secondary">Próxima</button>
+                    <button id="reset-button" type="button" class="btn btn-outline-secondary">Reiniciar</button>
                 </div>
                 <!-- <div>
                     <span>Timer: </span>
@@ -69,7 +78,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer  mt-auto py-3">
         <span> &copy; Copyright QuizAWS by Tuane Mendes - 2023</span>
         <a href="https://www.linkedin.com/in/tuane-mendes/" target="blank">
             <img class='c-footer_icon'

@@ -9,7 +9,6 @@
     --gray-ligth: #f1f1f1;
 }
 
-
 .header-container {
     background-color: var(--purpel);
     color: var(--gray-ligth);
@@ -38,22 +37,22 @@
     width: 20px;
     height: 3px;
     background-color: var(--gray-ligth);
-    top: calc(50% - 30px);
+    top: calc(50% - 20px);
     transition: transform 0.3s ease-in-out;
 }
 
 .interrogation::before {
-    transform: rotate(-10deg);
-    transform-origin: 0 60%;
+    transform: rotate(-35deg);
+    transform-origin: 0 50%;
     left: 8px;
-    top: 50px;
+    top: 55px;
 }
 
 .interrogation::after {
-    transform: rotate(45deg);
+    transform: rotate(35deg);
     transform-origin: 100% 50%;
-    right: 5px;
-    top: 60px;
+    right: 8px;
+    top: 55px;
 }
 
 @keyframes go-back {
@@ -78,16 +77,19 @@
     margin-bottom: 20px;
 }
 
+.bg-custom-success {
+    background-color: #a6e6a8; /* Substitua pelo código da cor desejada */
+}
+
 .footer {
     background-color: var(--purpel);
     color: var(--gray-ligth);
     padding: 10px;
     text-align: center;
-    margin-top: 60px;
-    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    bottom: 0;
 }
 
 .c-footer_icon {
