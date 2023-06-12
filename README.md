@@ -8,7 +8,7 @@
 
 * [Descrição do Projeto](#descrição-do-projeto)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
-* [Conteudo de Estudos](#conteudo-de-estudos)
+* [Detalhes do Projeto](#detalhes-do-projeto)
 * [Desenvolvido Por](#desenvolvido-por)
 * [Pessoas Contribuidoras](#pessoas-contribuidoras)
 
@@ -32,12 +32,40 @@ Criação de um web site responsivo no formato de quiz voltado para estudos de s
 
           
 
-<h2>💻Conteudo de Estudos</h2>
+<h2>💻Detalhes do Projeto</h2>
 
 <p>
+1. Funcionalidades principais: 
+    - exibir perguntas de múltipla escolha,
+    - fornecer opções de resposta,
+    - avaliar respostas,
+    - calcular pontuação,
+    - mostrar feedback ao usuário,
+    - permitir reiniciar o quiz;
+          
+    Quantidade de perguntas:  15 perguntas, mas a ideia é implementar mais questões.  
+          
+2. Exclusões do escopo: 
 
+  não implementar um sistema de autenticação de usuários;
 
+  não criar um banco de dados para armazenar perguntas e respostas;
+  
+3. Implementação básica:
+    - Criação da  estrutura HTML da interface do quiz.
+    - Estilizar a interface usando CSS  e com o framwork Bootstrap.
+    - Carregar as perguntas e respostas em JavaScript.
+          
+ 4. Lógica do quiz:
+    - Implementar a lógica para exibir uma pergunta de cada vez.
+    - Manipular eventos de clique nos botões de resposta.
+    - Validar a resposta selecionada pelo usuário e fornecer feedback  na cor verde para certo e vermelha para errado.
+          
+ 4. Pontuação e finalização:
+    - Calcular e exibir a pontuação do usuário.
+    - Fornecer opção para reiniciar o quiz,  exibir as informações de tempo e pontuação.
    
+          
 </p>
 
 <h2>🛠Desenvolvido Por</h2>
