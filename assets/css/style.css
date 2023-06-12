@@ -3,11 +3,19 @@
     margin: 0;
     /* border: border-box; */
 }
+body {
+    background-image: url("/assets/img/aws.jpeg");
+    background-size: cover;
+  }
 
 :root {
-    --purpel: #4f0bbc;
+    --purpel: #246f9d;
     --gray-ligth: #f1f1f1;
 }
+
+.custom-height {
+    margin-top: 40px;
+  }
 
 .header-container {
     background-color: var(--purpel);
@@ -75,10 +83,6 @@
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
-}
-
-.bg-custom-success {
-    background-color: #a6e6a8; /* Substitua pelo código da cor desejada */
 }
 
 .footer {
